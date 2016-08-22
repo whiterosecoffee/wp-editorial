@@ -1,0 +1,287 @@
+# Copyright (C) 2013 the WordPress team
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: menaPOST 0.1\n"
+"POT-Creation-Date: 2014-4-3 05:25:07+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: Ahmed <ahmed@venturedive.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: \n"
+"Language: ar\n"
+"X-Generator: Poedit 1.6.4\n"
+
+msgid "Login"
+msgstr "تسجيل الدخول"
+
+msgid "Logout"
+msgstr "تسجيل الخروج"
+
+msgid "Grid"
+msgstr "شبكة"
+
+msgid "List"
+msgstr "قائمة"
+
+msgid "Who We Are"
+msgstr "من نحن"
+
+msgid "Us"
+msgstr "نحن"
+
+msgid "Our Team"
+msgstr "فريقنا"
+
+msgid "Our Writers"
+msgstr "كتّابنا"
+
+msgid "Our Blog"
+msgstr "مدونتنا"
+
+msgid "Work With US"
+msgstr "انضم لنا"
+
+msgid "Terms and Condition"
+msgstr "شروطنا"
+
+msgid "Social"
+msgstr "قنوات التواصل"
+
+msgid "Facebook"
+msgstr "فيسبوك"
+
+msgid "Twitter"
+msgstr "تويتر"
+
+msgid "Google+"
+msgstr "+جوجل"
+
+msgid "Pinterest"
+msgstr "بينتيريست"
+
+msgid "Youtube"
+msgstr "يوتيوب"
+
+msgid "Newsletter"
+msgstr "نشرتنا"
+
+msgid "Email..."
+msgstr "عنوان بريدك الإلكتروني"
+
+msgid "Go!"
+msgstr "يذهب!"
+
+msgid "by:"
+msgstr "من قبل:"
+
+msgid "Most Viewed"
+msgstr "الأكثر مشاهدة"
+
+msgid "Most Recent"
+msgstr "جديد"
+
+msgid "Toggle Navigation"
+msgstr "تبديل للملاحة"
+
+msgid ""
+"Oh No! Looks like the page you are looking for doesn’t exist. Please try "
+"searching again."
+msgstr "يبدو أن الصفحة التي تبحث عنها غير موجودة. يرجى محاولة البحث مرة أخرى"
+
+msgid "ERROR - 400 Bad Request"
+msgstr "خطأ - 400 طلب غير سليم"
+
+msgid "ERROR - 401 Unauthorized"
+msgstr "خطأ - 401 طلب غير مصرح بها"
+
+msgid "ERROR - 403 Forbidden"
+msgstr "خطأ - 403 ممنوعة"
+
+msgid "ERROR - 404 File not found"
+msgstr "لم يتم العثور على الملف 404 - خطأ"
+
+msgid "ERROR - 500 Internal Server Error"
+msgstr "خطأ - 500 خطأ خادم داخلي"
+
+msgid "ERROR - An unknown error has occured"
+msgstr "خطأ - لقد حدث خطأ غير معروف"
+
+msgid "seconds"
+msgstr "ثواني"
+
+msgid "You will be redirected to"
+msgstr "سيتم نقلك ل"
+
+msgid "in"
+msgstr "في"
+
+msgid "minutes read"
+msgstr "قراءة دقيقة"
+
+msgid "view more"
+msgstr "المزيد"
+
+msgid "Activity Value"
+msgstr "النشاط القيمة"
+
+msgid "Trending"
+msgstr "ينكسر الآن"
+
+msgid "No articles in this list."
+msgstr "لا توجد مواضيع في هذه القائمة"
+
+msgid "Recommended Readings"
+msgstr "مقترحات"
+
+msgid "Bookmarks"
+msgstr "اختياراتي"
+
+msgid "Profile"
+msgstr "صفحتي"
+
+msgid "Add to reading list"
+msgstr "اضف إلى  اختياراتي"
+
+msgid "All"
+msgstr "الكل"
+
+msgid "Most Active"
+msgstr "الأكثر مشاركة"
+
+msgid "refresh"
+msgstr "تحديث"
+
+msgid "My Drafts"
+msgstr "مسوادتي"
+
+msgid "My Reading List"
+msgstr "اختياراتي"
+
+msgid "Write Post"
+msgstr "اكتب"
+
+msgid "Search"
+msgstr "ابحث"
+
+msgid "Like"
+msgstr "أعجبني"
+
+msgid "Share"
+msgstr "مشاركة"
+
+msgid "Chirp"
+msgstr "غرد"
+
+msgid "Keyword %s .. Results %d"
+msgstr "كلمة البحث %s .. عدد النتائج %d"
+
+msgid "Editor"
+msgstr "المحرر"
+
+msgid "Date"
+msgstr "التاريخ"
+
+msgid "Page"
+msgstr "الصفحة"
+
+msgid "I'm looking for ..."
+msgstr "ابحث عن ..."
+
+msgid "Now refracted"
+msgstr "ينكسر الآن"
+
+msgid "Previous"
+msgstr "السابق"
+
+msgid "Threads"
+msgstr "المواضيع"
+
+msgid "Loading ..."
+msgstr "تحميل ..."
+
+msgid "Find out ..."
+msgstr "اكتشف..."
+
+msgid "I want to read topics"
+msgstr "أريد قراءة مواضيع"
+
+msgid "Take"
+msgstr "تستغرق"
+
+msgid "Show"
+msgstr "عرض"
+
+msgid "Discoveries crumb"
+msgstr "اكتشافات كسرة"
+
+msgid "Our Story"
+msgstr "قصتنا"
+
+msgid "Copy"
+msgstr "نسخ"
+
+msgid "Kasra Authors"
+msgstr "فريق كسرة"
+
+msgid "Copy Editors"
+msgstr "نسخ المحررين"
+
+msgid "Ghost Authors"
+msgstr "شبح المؤلف"
+
+msgid "Kasra apologize page does not exist!"
+msgstr "كسرة تعتذر الصفحة غير موجودة!"
+
+msgid ""
+"Sorry .. we can not find the page you are looking for. The following topics "
+"impressed a lot of our readers, we hope you like it too."
+msgstr ""
+"عذراً.. لم نتمكن من العثور على الصفحة التي كنت تبحث عنها. المواضيع التالية "
+"أعجبت الكثير من قرائنا، نتمنى أن تعجبك أيضاً."
+
+msgid "Total Posts and comments"
+msgstr "إجمالي المشاركات والتعليقات"
+
+msgid "Admin Panel"
+msgstr "قسم التحرير"
+
+msgid "Tagline"
+msgstr "اكسرها وانشرها"
+
+msgid ""
+"You can now save your favorite topics, and return to it at any time you "
+"want, by pressing the button (sic)"
+msgstr ""
+"يمكنك الآن حفظ المواضيع المفضلة لك، والعودة إليها في أي وقت تريد، من خلال "
+"الضغط على زر"
+
+msgid "Outdated browser message"
+msgstr ""
+"شاركنا في موقعنا بتحميل أخر نسخة من متصفحك الخاص، وإذا رغبت في متابعتناعبر "
+"هاتفك الذكي في وقت العمل، لن يعرف رئيسك أنك تكسرها وتنشرها :)"
+
+msgid "Article"
+msgstr "مقالة"
+
+msgid "Articles"
+msgstr "مقالات"
+
+msgid "Like us on Facebook?"
+msgstr "تابعنا على صفحة فيسبوك"
+
+msgid "Image Video Share"
+msgstr "شارك"
+
+msgid "Copy Short Url"
+msgstr "انسخ رابط الموضوع"
+
+msgid "Before leaving...check these articles!"
+msgstr "بعض المواضيع التي قد تعجبك قبل أن تغادر"
+
+msgid "Eid Greetings"
+msgstr "عيد"
+
+msgid "Create a Greetings Card"
+msgstr "اصنع بطاقة تهنئة"

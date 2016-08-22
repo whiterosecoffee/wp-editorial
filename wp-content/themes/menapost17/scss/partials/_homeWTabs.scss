@@ -1,0 +1,282 @@
+/* Scss Document */
+@import "header";
+.kasraNewest, 
+.kasraMostViewed, 
+.kasraMostShared,
+.newestArticles .featuredImage,
+.newestArticles .tileTitle {float: right; }
+.col-title { 
+	margin-top:25px; 
+	position: relative;
+	@include bp(papaBear){
+		border-top: 5px solid $orange; 
+	}
+	@include bp(mamaBear){
+		width: 32%;
+	}
+	@include bp(babyBear){
+		width: 32%;
+	}
+}
+.tabs.kasraMostShared, .tabs.kasraMostViewed {
+		margin-left: 2%;
+	@include bp(papaBear){
+		margin-left: 0;
+	}
+}
+.tabNav {
+	@include bp(papaBear){
+		margin-bottom: 15px; 
+
+	}
+}
+.desktop .tabTitle { /* added for when Desktop users have small viewports and are in tabs */
+	cursor: pointer;
+	@include bp(papaBear){
+		cursor: default;
+	}
+}
+.tabTitle { 
+	padding: 7px 7px 7px 0; 
+	border-left: 2px solid $lightGrey;
+	border-right: 2px solid $lightGrey;
+	background-color: white; 
+	margin-bottom: 0;
+	color: $lightGrey;
+	border-top: 5px solid $lightGrey;
+	position: relative;
+	bottom: -2px;
+	@include bp(papaBear){
+		color: $orange;	
+		border-top: none;
+		border-bottom: 2px solid $lightGrey;
+		position: static;
+
+	}
+	@include bp(babyBear){
+		font-size: 1em;
+	}
+	
+}
+
+
+.tab-current {
+	color: $orange;
+	border-top: 5px solid $orange;
+	border-left: 0;
+	border-right: 0;
+	border-bottom: 2px solid white;
+	@include bp(papaBear){
+		border-top: none;
+		border-bottom: 2px solid $lightGrey;
+		border-left: 2px solid $lightGrey;
+		border-right: 2px solid $lightGrey;
+	}
+}
+.col-emblem { 
+	@include bp (papaBear){
+		background-color: $orange; 
+		line-height: 42px; 
+		height:42px; 
+		float: right; 
+		padding: 0 6px; 
+		margin-left: 7px; 
+	}
+	@include bp (mamaBear){
+		display: none;
+	}
+	@include bp (babyBear){
+		display: none;
+	}
+	
+}
+.triangle-bottom {
+	@include bp(papaBear){
+		border-top: 10px solid $orange; 
+		border-left: 25px solid transparent; 
+		border-right: 25px solid transparent; 
+		height: 0; 
+		width: 0; 
+		float: right; 
+		clear: right;	
+	}
+	
+	
+}
+.col-emblem .icon-kasra-emblem { 
+	color: white; 
+	font-size: 1.75em;
+}
+#tabs {
+	@include bp(papaBear){
+		padding-top: 0;
+	}
+}
+.tabNav {
+	@include bp(mamaBear){
+	}
+}
+.tabContent {
+	background-color: white;
+	padding-top: 20px;
+	border-top: 2px solid $lightGrey;
+	@include bp(papaBear){
+		padding-top: 0;
+		background-color: transparent;
+		border-top: 0;
+	}
+}
+.tabContent section { 
+	display: none;
+	@include bp(papaBear){
+		display: block;
+	}
+}
+.tabContent section.content-current {
+	display: inline-block;
+}
+.articleExcerpt { 
+	border:2px solid $lightGrey; 
+	background-color:white; 
+}
+.tabNav {
+	@include bp(mamaBear){
+
+	}
+}
+.mostShared {
+	@include bp(papaBear){ 
+		border-bottom-right-radius: 45px; 
+		margin-bottom: 20px;
+	}
+}
+.mostShared, 
+.mostShared .featuredImage { 
+	@include bp(papaBear){
+	border-top-right-radius: 45px; 
+	}
+}
+.mostViewed, 
+.newestArticles, .mostShared { 
+		margin-bottom: 10px;
+	}
+.tileTitle {
+	@include bp(babyBear){
+		font-size: 1em;
+	}
+	@include bp(mamaBear){
+		font-size: 1.5em;
+	}
+}	
+.mostViewed .tileTitle { 
+	@include bp(papaBear){
+		font-size: 1.1em;
+	}
+}
+.newestArticles {  }
+	.newestArticles .featuredImage { 
+		@include bp(papaBear){
+			width: 40%;
+		}
+		@include bp(newPicDrop){
+			display: none;
+		}
+		
+	}
+	.articleExcerpt.newestArticles .tileTitle { 
+		@include bp(papaBear){
+			font-size: 0.7em; 
+			width: 57%;
+			margin-right: 3%; 
+			margin-top: 6px;
+			padding-left: 2px;
+		}
+		@include bp(newPicDrop){
+			width: auto;
+			padding: 10px 10px 10px 5px;
+		}
+	}
+.articleExcerpt { position: relative;}
+	.articleAuthorImgLink {  }
+	.articleAuthorImgLink img { 
+		border-radius:50%; 
+		border:1px solid $darkGrey; 
+	}
+	.articleAuthorLink {  
+		display: block; width:45px; 
+		text-align:center; 
+		font-size:.8em; 
+		word-wrap: break-word; 
+	}
+	.articleStats { 
+		position:absolute; 
+		top:0; 
+		left:0; 
+		width:100%; 
+	}
+	.viewCount {
+		background-color:rgba(255,255,255,.74); 
+	}
+	.socialCount { 
+		display:none; 
+		color:white; 
+	}
+		.socialCount i { 
+			background-color:white; 
+			border-radius:50%; 
+			display:block; 
+			height:1.3em; 
+			width:1.3em; 
+		}
+	.fbCount { color:#306199; }
+	.twCount { color:#26c4f1; }
+	.countBox { 
+		width:70px; 
+		margin-right:10px; 
+		padding:6px 5px; 
+		display:block; 
+		float:left;
+	}
+	.mostShared .countBox { 
+		@include bp(papaBear){
+			width:80px; 
+			padding:8px 6px;
+		}
+	}
+	.mostShared i { 
+		@include bp(papaBear){
+			font-size:1.3em;
+		}
+	}
+.tileFooter { padding:10px 0 10% 2%;}
+	.tileAuthor { 
+		width: 10%; 
+		margin:0 2%;
+	}
+	.articleExcerpt .tileTitle { width: 84%; }
+	.newestArticles .articleStats {
+		@include bp(papaBear){
+			display: none;
+		}
+	}
+	.newestArticles .tileAuthor {
+		@include bp(papaBear){
+			display: none;
+		}
+	}
+	.newestArticles .readTime {
+		@include bp(papaBear){
+			display: none;
+		}
+	}
+	.newestArticles .tileTitle {
+		@include bp(papaBear){
+		}
+	}
+	.tileAuthor, .tileTitle { float: right; }
+	.readTime { 
+		position: absolute; 
+		bottom: 5px; 
+		left: 5px;
+	}
+

@@ -1,0 +1,315 @@
+/* Scss Document */
+/** Header Structure **/
+body {font-size: inherit !important;}
+a:hover {color: inherit;}
+	.site-header {
+
+	}
+
+	#main {
+		background-color: $lightGrey;
+		max-width: $papaBear;
+		margin: 0 auto;
+		height: 40px;
+		position: fixed;
+		top: 0;	right: 0; left:0;
+
+		width:100%;
+		z-index: 999;
+		@include bp(papaBear) {
+			background-color:white;
+			height:90px;
+			border-top-right-radius: 45px;
+			border-bottom-right-radius: 45px;
+
+
+			// for avatar positioning
+		}
+
+	}
+	.scroll-menu #main { @include bp(papaBear){ padding-right: 5px;}}
+
+	.scroll-menu #main, .scroll-menu .menu {
+		border-radius: 0;
+	}
+	#nav {
+		@include bp(papaBear){
+			clear: left; // clearing the social icons
+		}
+
+
+	}
+	.mobile .menu {display:none;}
+	.home .menu {display: block;}
+
+	.home-nav ul li { float: right; margin-left: 1em; }
+
+	.menu-open .site-container { position:relative; left: -20em; z-index: 0;  }
+
+	.menu-open #main { position: static;}
+
+	.menu-open #nav {
+	  right: 0;width:20em;
+	  position:fixed;
+	  height: 100%;
+	  top: 0;
+	  overflow-y: scroll;
+	  background-color:#3d3d3d;
+	  line-height:2.75em;
+	  zoom:1;
+	  padding-bottom: 45px;//spacing for the search element
+	  z-index: 1052;
+
+	}
+	.menu-open #main {}
+
+
+
+	.mobile-nav-closed #social-media,
+	.mobile-nav-closed .home-nav {
+		@include bp(babyBear){
+			display: none;
+		}
+		@include bp(mamaBear){
+			display:none;
+		}
+	}
+	.icon-search {
+		display: none;
+	}
+	.desktop .icon-search {
+		@include bp(papaBear){
+			display: inline-block;
+			line-height: 45px;
+		}
+	}
+	#nav .search-form { border-top: 2px solid $lightGrey; border-bottom: 2px solid $lightGrey;}
+	#nav .search-close { display: none;}
+	#nav .search-form input[type=text] { color: white;}
+
+	#loggedInUserInfo, #aboutKasra {
+			display: none;
+		}
+
+
+
+	.menu-open #aboutKasra { display: block; }
+	.menu-all-container { float: right; }
+		ul#menu-all > li > ul.sub-menu > li { font-weight: bold; border-left: 1px solid #f6f6f6; height: 100%;}
+		.menu-open ul#menu-all > li > ul.sub-menu > li { font-weight: normal; border-left: 0;}
+	.sub-menu { display: none; }
+	.mobile-nav-closed ul#menu-all:hover ul.sub-menu { display: block;}
+			ul.sub-menu li { }
+
+	.menu-open .menu {display: block;} /* I believe this is not needed  */
+	.menu-open.singleSocialMenu #singleSocialMenu { display: none;}
+	.menu-open.singleSocialMenu #main-all-menus-container { display: block;}
+		#logo {
+			color:$orange;
+			text-align: center;
+			@include transition;
+			@include bp(mamaBear) {
+				font-size:2.5em;
+				line-height:40px;
+				position: static;
+			}
+			@include bp(papaBear){
+				font-size:3.75em;
+				line-height:4.375rem;
+				padding-top: 13px;
+				padding-right: 11px;
+				background-color:white;
+				border-radius:45px;
+				border-radius:45px;
+				position:absolute;
+				top: 0;
+				right: 0;
+				z-index: 2;
+				height:90px;
+				width:90px;
+				line-height: 60px;
+
+			}
+		}
+		.scroll-menu #logo {
+
+
+		}
+		#logo {
+
+		}
+		.scroll-menu #logo {
+			margin: 0 5px;
+			line-height: 40px;
+			height: 40px;
+			float: right;
+			position: static;
+			padding: 0;
+		}
+		.icon {
+			font-size:1.875em;
+			line-height:2.15em;
+		}
+
+		.scroll-menu #nav-open-btn {
+			margin-top: 0;
+			@include bp(papaBear) {
+				display:none;
+			}
+		}
+		#nav-open-btn {
+			color: #888;
+			float: right;
+			margin-top: 5px;
+			display: block;
+			@include bp(papaBear) {
+				display:none!important;
+			}
+		}
+		#nav-close-btn {
+			display:none;
+			font-size:1.5em;
+			padding:.3em 0 .25em .5em;
+			// width:100%;
+		}
+		.menu-open .icon-cancel-circled {margin-top: 8px;}
+		#profile {
+			float: left;
+			@include bp(papaBear){
+				position: absolute;
+				bottom: 0;
+				left: 0;
+			}
+		}
+			#profile #loggedInAvatar {
+				float: left;
+				position: relative; //for caret positioning
+				padding-right: 25px;
+			}
+			#profile #loggedInAvatar img {
+				@include bp(papaBear){
+					width: 45px; height: 45px;
+				}
+			}
+			#profile .icon-user {
+				line-height: 40px;
+				@include bp(papaBear){
+					margin-top: 6px;
+					line-height:inherit;
+					margin-left:4px;
+				}
+			}
+			.logged-in .icon-user {
+				display: none;
+			}
+
+			.scroll-menu #profile {
+				margin-top: 0;
+		}
+		#social-media:hover .follow-content {
+			display: block;
+			opacity: 1;
+		}
+
+
+		.scroll-menu.menu-open #menu-main, .menu-open #menu-main, .menu-open #menu-all, .scroll-menu.menu-open #menu-all { height: auto;}
+		.scroll-menu #menu-main { height: 40px;}
+		 .scroll-menu #menu-main>li, .scroll-menu #menu-all>li { line-height: 40px;}
+			#menu-main li {
+				@include bp(papaBear){
+					float:right;
+				}
+			}
+		.menu-open li a  { color:#888; }
+		.menu-open li a:hover { color: $orange; }
+	#container {
+		// position: relative;
+		@include bp(mamaBear){
+			padding-top:55px;
+		}
+		@include bp(papaBear){
+			padding-top: 88px;
+		}
+	}
+	@media screen and (min-width: 51em){
+
+		.icon-user { margin-left:0.25em; }
+
+	}
+
+	.site-container { max-width: $papaBear; margin: 0 auto; }
+
+	// .menu-open #main { width: 100%;}
+		.menu-open #loggedInUserInfo { border-top: 1px solid #888; border-bottom: 1px solid #888; clear: left; display: block;}
+		.menu-open li.profile-btn { border-bottom: 1px solid #888; padding: 3px 20px; color: #888; }
+
+	.menu-open #nav-close-btn{display:block; color:#888; width: 100%; padding-right: 15px;}
+	.menu-open #menu-main li{float:none;}
+
+	.scroll-menu #main { background-color:#e8ebeb; height:40px;}
+	.scroll-menu #social-media  {display:none;}
+	// .scroll-menu.menu-open #profile, .scroll-menu.menu-open #social-media  {display:block; float:none}
+	.scroll-menu #logo i { color:$orange; }
+	.scroll-menu #nav { line-height:2.75em; /*width:22em; right:-44em; */}
+	.scroll-menu.menu-open #menu-main li { float:none; }
+/** Header Structure End **/
+
+/**Header Styles **/
+	.icon-kasra-emblem { color:$orange; }
+	#social-media { height:45px; float:left; position: relative;}
+	.menu-open #social-media { display: none; }
+	#social-media .link-social {float: right;}
+ 	.link-social { margin-top:6px; margin-left: 5px; border-radius: 50%; width: 30px; height: 30px; color:$orange;}
+ 	.link-social:hover { color: $orange;}
+		.link-social i { display:block; margin-top:0.2em; font-size: 1.3em; }
+		.fb-bg { background-color:#306199; } /* Facebook Blue*/
+		.tw-bg { background-color:#26c4f1; } /* Twitter Blue*/
+		.gp-bg { background-color:#D34836; } /* Google Plus Red */
+	#menu-main li a { padding:0 0.75em; }
+	.menu-open #menu-main { border-bottom: 1px solid #888;}
+	.menu-open #menu-main li a { padding: 0; }
+		#menu-main li a:hover {
+			color:$orange;
+			transition: all .15s ease-in-out;
+		}
+	.scroll-menu #logo { font-size:1.875em; width:auto; line-height:40px; color:$orange; background-color:transparent; display: inline-block;}
+	.icon-menu	{ margin: 0 4px;}
+	.scroll-menu .icon-menu { color:#888; margin-top:2px; line-height:40px; }
+	.scroll-menu #profile { display:block; }
+	.scroll-menu .menu { padding-right:10px; }
+	.scroll-menu.menu-open .menu { padding-right:0; }
+	.menu-open .link-social i { line-height:1.4em; }
+	.menu-open #nav a:hover { background-color:#4d4d4d; color:$orange; transition: all .15s ease-in-out; }
+		.menu-open #nav #menu-main li a { border-radius:0; }
+		.menu-open #nav #menu-main li a:hover { background-color:#4d4d4d; border-bottom:none; border-radius:0; color:#ff9100; }
+	.menu-open #nav li a { display:block; padding-right: 15px; }
+
+/**Header Styles End**/
+
+/*temp styles*/
+/* temp menu styles */
+.menu {
+	line-height:45px;
+	@include bp(papaBear){
+		border-bottom-right-radius:45px;
+		background-color:$lightGrey;
+	}
+}
+.mobile-nav-closed:not(.scroll-menu) .menu { @include bp(papaBear){padding-right:100px;}}
+.menu-open .menu {
+	background-color: transparent;
+}
+#profile a, .menu a { color:$darkGrey; }
+#profile .dropdown-menu a:hover { color: $orange;}
+
+.scroll-menu .activitybar-horizontal {
+    position: fixed;
+    top: 0;
+    left: 40%;
+    @include bp(mamaBear){ left: 25%;}
+    background: none;
+    visibility: visible;
+    opacity: 1;
+    transition: all .35s;
+}
+

@@ -1,0 +1,91 @@
+/* Scss Document */
+$bgGrey: #f6f6f6;
+$orange: #ff9100;
+$grey: #3d3d3d;
+$darkGrey: #4d4d4d;
+$lightGrey: #e8ebeb;
+$greyBorder:#c6c8ca;
+$fbBlue: #306199;
+$twBlue: #26c4f1;
+$gpRed: #d34836;
+/* Fonts */
+@font-face {
+    font-family:'Droid Arabic Kufi';
+    font-style: normal;
+    font-weight: normal;
+    src: url(//themes.googleusercontent.com/static/fonts/earlyaccess/droidarabickufi/v2/DroidKufi-Regular.eot?#iefix) format('embedded-opentype'), url(//themes.googleusercontent.com/static/fonts/earlyaccess/droidarabickufi/v2/DroidKufi-Regular.woff) format('woff'), url(//themes.googleusercontent.com/static/fonts/earlyaccess/droidarabickufi/v2/DroidKufi-Regular.ttf) format('truetype');
+}h1,h2,h3,h4,h5,h6 {font-family:'Droid Arabic Kufi';color: $darkGrey; font-weight: normal; direction: rtl;} p, a, li, span, { direction: rtl;}
+/* Colours */
+body {
+	background-color: $bgGrey;
+	direction: ltr;
+	text-align: right;
+	overflow-x: hidden;
+}
+body.mobile-nav-closed {
+	@include bp(papaBear){
+		padding-top: 115px;
+	}
+	@include bp(mamaBear){
+		padding-top: 50px;
+	}
+
+	@include bp(babyBear){
+		padding-top: 50px;
+	}}
+body, #profile a, .col-title, .tile-title, .activityCount, .articleAuthorLink {color: $darkGrey;}
+.site-inner {
+	padding: 0 10px;
+}
+h1.pageName { margin-bottom: 20px; }
+.menu-open .site-inner { padding: 0;}
+#main { background-color: white; }
+.linkSocial { color: $orange; }
+.menu {background-color: $lightGrey;}
+/* Structure */
+img {max-width: 100%;}//duplicate?
+#btn-to-top { display:none; }
+.scroll-menu #btn-to-top {
+	display:block;
+	position:fixed;
+	bottom:25px;
+	right:25px;
+	color:white;
+	background-color:#ff9100;
+	border-radius:50%;
+	height:25px;
+	width:25px;
+}
+#btn-to-top .icon-up-open {
+	line-height:23px;
+	text-align:center;
+	display:block;
+}
+.authorArticle .tileTitle { font-size: 1.1em; }
+    .authorArticle .articleAuthorLink { font-size: 0.8em;}
+    .authorArticle .readTime { font-size: 0.6em;}
+.searchPage { position: relative; }
+	.search-container.searchPage { background-color: white; margin-top: 5%; margin-left: auto; margin-right: auto; @include bp(papaBear){width: 75%;}}
+		.search-container.searchPage .search-form input[type=text] { width: 75%; }
+.contactUs { padding-top: 25px;}
+#contactUsList {margin-top: 25px;}
+	#contactUsList li { margin-bottom: 30px;}
+	.blockListItem { display: block; background-color: $lightGrey; padding: 25px 20px 40px 20px; @include bp(papaBear){ height: 183px; } @include bp(mamaBear) { min-height: 180px;}@include bp(singleColumn) { min-height: 180px;}}
+	.blockListItem:hover { background-color: $orange; color: white;}
+		.blockListItem h1 { font-size: 1.6em; @include bp(singleColumn) { font-size: 1.5em; }}
+		.blockListItem:hover h1{ color: white;}
+		.blockListItem p { font-family:"Droid Arabic Naskh", sans-serif; }
+#singleSocialMenu a span { @include bp(babyBear){display: none;}}
+#singleSocialTwitter { @include bp(papaBear){ width:98px;}}
+.article.activitybar-horizontal ul { @include bp(papaBear){width:430px;}}
+#taxContent .articleExcerpt > .articleLink {
+		overflow: hidden;
+		@include bp(papaBear){
+			max-height: 183px;
+		}
+		@include bp(mamaBear){
+			max-height: 220px;
+		}
+	}
+@media screen and (max-width:1200px){.singleSocialMenu .article.activitybar-vertical { right: 10px;}}
+@import "contactForms";

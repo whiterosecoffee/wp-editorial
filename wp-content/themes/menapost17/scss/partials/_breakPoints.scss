@@ -1,0 +1,49 @@
+/* Scss Document */
+$babyBear: 30.5em;
+$singleColumn: 42.5em;
+$mamaBear: 61.25em;
+$newPicDrop: 67.82em;
+$papaBear: 75em;
+$tabsWidth: 42.5em;
+
+@mixin bp($point) {
+    @if $point == papaBear {
+        @media (min-width: $mamaBear) {
+            @content;
+        }
+    }
+    @else if $point == mamaBear {
+        @media (max-width: $mamaBear) {
+            @content;
+        }
+    }
+    @else if $point == babyBear {
+        @media (max-width: $babyBear) {
+            @content;
+        }
+    }
+    @else if $point == newPicDrop {
+        @media (max-width: $newPicDrop) {
+            @content;
+        }
+    }
+    @else if $point == singleColumn {
+        @media (max-width: $singleColumn) {
+            @content;
+        }
+    }
+    @else if $point == tabsWidth {
+        @media (max-width: $tabsWidth) {
+            @content;
+        }
+    }
+}
+
+/* Use inline in Sass files on Elements.
+
+	i.e.:
+		@include bp(baby-bear) {
+	    	width: 100%;
+	  	}
+
+*/

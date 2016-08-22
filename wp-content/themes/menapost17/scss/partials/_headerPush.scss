@@ -1,0 +1,223 @@
+/* Scss Document */
+/** Header Structure **/
+	#header-out { 
+		position:fixed; 
+		left:0; 
+		width:100%; 
+		z-index: 1;
+		-webkit-transform:none !important;
+	}
+
+	#main {  
+		margin:0 auto;
+		position:relative;
+		background-color: $lightGrey; 
+		max-width: $papaBear;
+		z-index: 2;
+		@include bp(papaBear) { 
+			background-color:white; 
+			height:90px; 
+			border-top-right-radius: 45px; 
+			border-bottom-right-radius: 45px; 
+		}
+		@include bp(mamaBear){
+			//height:3.75em;
+		}
+	}
+	.scroll-menu #main {
+		border-radius: 0;
+	}
+	#nav { 
+		color:white;
+		float: left;
+		clear: left;
+		@include bp(papaBear){
+			width: 100%;
+		}
+	}
+	.panel {
+		position: fixed;
+		right: -19em;
+		width: 19em;
+	}
+
+	body.mobile-nav-closed {
+
+		#social-media,
+		.home-nav  { 
+			@include bp(babyBear){
+				display: none;
+			}
+			@include bp(mamaBear){
+				display:none;
+			}
+		}
+	}
+	
+	#nav { 
+	  display:block; 
+	  min-height:950px;
+	  background-color:#3d3d3d; 
+	  color:white;
+	  line-height:2.75em; 
+	  margin-right:0;
+	  z-index: 4;
+
+
+	}
+		#logo { 
+			font-size:3.75em; 
+			line-height:4.375rem;
+			@include bp(mamaBear) {
+				font-size:2.5em; 
+				line-height:3.75rem;
+			}
+			@include bp(papaBear){
+				background-color:white; 
+				border-radius:45px; 
+				position:absolute; 
+				height:90px; 
+				width:90px;
+			} 
+		}
+		.scroll-menu #logo {
+
+		}
+		#logo-icon { 
+			display:block; 
+			color:$orange; 
+			@include bp(papaBear){
+				margin:10px 5px 0; 
+			}
+		}
+		.scroll-menu #logo-icon {
+			margin: 0 5px;
+		}
+		.icon { 
+			font-size:1.875em; 
+			line-height:2.15em; 
+		}
+
+		#nav-open-btn { 
+			color: #888;
+			@include bp(papaBear) {
+				display:none; }
+		}
+		.scroll-menu #nav-open-btn {
+			@include bp(mamaBear) {
+				display:block;
+			}
+		}
+
+		#nav-close-btn { 
+			display:none;
+			font-size:1.5em; 
+			padding:.5em 0 .5em .5em; 
+			width:100%; 
+		}
+		#profile { 
+				margin-top: 6px;
+				@include bp(papaBear){
+					float: left;
+				}
+		}
+			#profile i { 
+				line-height: 45px;
+				@include bp(papaBear){
+					line-height:inherit; 
+					margin-left:4px; 
+				}
+			}
+
+		.scroll-menu #profile {
+			margin-top: 0;	
+		}
+			
+
+
+		#menu-main { 
+				@include bp(papaBear){
+					min-height:45px; 
+				}
+			}
+
+			#menu-main li { float:right; }
+
+	#container { 
+		position: relative;
+		@include bp(mamaBear){
+			padding-top:55px; 
+		}
+		@include bp(papaBear){
+			padding-top: 88px;
+		}
+	}
+
+
+	@media screen and (min-width: 51em){
+		
+		#logo {/*float:right; width:11%; text-align:center;*/  }
+		.icon-user { margin-left:0.25em; }
+
+	}
+	body, #container, #nav, #main, #logo, footer { 
+		@include transition;
+	}
+	.menu-open #container, .menu-open #header-out { position: relative; left: -19em; }
+	
+	
+	.menu-open #social-media, .menu-open #nav-close-btn{display:block;}
+	.menu-open #profile, .menu-open #menu-main li{float:none;}
+	
+	.scroll-menu #main { background-color:#e8ebeb; height:2.75em;}
+	.scroll-menu #social-media  {display:none;}
+	.scroll-menu.menu-open #profile, .scroll-menu.menu-open #social-media  {display:block; float:none}
+	.scroll-menu #logo i { color:$orange; }
+	.scroll-menu .icon { line-height:44px; }
+	.scroll-menu #nav { line-height:2.75em; /*width:22em; right:-44em; */}
+	.scroll-menu.menu-open #menu-main li { float:none; }
+/** Header Structure End **/
+
+/**Header Styles **/
+	.icon-kasra-emblem { color:$orange; }
+	#social-media { height:45px; float:left;} 
+	.menu-open #social-media { background-color:#3d3d3d; }
+ 	.link-social { margin-top:6px; margin-left: 5px; border-radius: 50%; width: 30px; height: 30px; color:$orange;}
+		.link-social i { display:block; margin-top:0.2em; font-size: 1.3em; }
+		.fb-bg { background-color:#306199; } /* Facebook Blue*/
+		.tw-bg { background-color:#26c4f1; } /* Twitter Blue*/
+		.gp-bg { background-color:#D34836; } /* Google Plus Red */ 
+	#menu-main li a { line-height:2.1em; padding:0 0.75em; height:34px;}
+		#menu-main li a:hover { 
+			background-color:white; 
+			color:$orange; 
+			transition: all .15s ease-in-out; 
+		}
+	.scroll-menu #logo { font-size:1.875em; width:auto; line-height:45px; color:$orange; background-color:transparent;}
+	.icon-menu	{line-height: 60px; margin: 0 4px;}
+	.scroll-menu .icon-menu { color:#888; margin-top:2px; line-height:44px; }
+	.scroll-menu #profile { display:block; }
+	.scroll-menu .menu { padding-right:50px; }
+		.scroll-menu #menu-main li a { color:#888; }
+		.scroll-menu #menu-main li a:hover { background-color:#d1d1d1; border-bottom:none; border-radius:.25em; }
+	.menu-open .link-social i { line-height:1.4em; }
+	.menu-open #nav-close-btn { color:#888; }
+	.menu-open #nav a:hover { background-color:#4d4d4d; color:$orange; transition: all .15s ease-in-out; }
+		.menu-open #nav #menu-main li a { border-radius:0; color:white; }
+		.menu-open #nav #menu-main li a:hover { background-color:#4d4d4d; border-bottom:none; border-radius:0; color:#ff9100; }
+	.menu-open #nav li a { display:block; }
+
+/**Header Styles End**/
+
+/*temp styles*/
+/* temp menu styles */
+.menu { 
+	line-height:45px; 
+	@include bp(papaBear){
+		border-bottom-right-radius:45px; 
+		padding-right:100px;	
+		background-color:$lightGrey;
+	} 
+}
+#profile a, .menu a { color:$darkGrey; }
+

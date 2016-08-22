@@ -1,0 +1,13 @@
+/* Scss Document */
+$droidKufi: 'Droid Arabic Kufi', sans-serif;
+$droidNaskh: 'Droid Arabic Naskh', sans-serif;
+
+body {
+	font-family:$droidNaskh;
+	color:$grey;
+}
+h1,h2,h3,h4,h5,h6 { 
+	font-family: $droidKufi;
+	color: $grey;
+	font-weight:bold;
+}

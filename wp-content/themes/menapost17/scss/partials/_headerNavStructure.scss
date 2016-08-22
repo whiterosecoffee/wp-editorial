@@ -1,0 +1,42 @@
+/* Scss Document */
+$navWidth: 22em;
+
+#header-out { height:50px; position:fixed; left:0; width:100%;}
+.menu-open body { 
+		left:-$navWidth; 
+	 	overflow-x:hidden; 
+		position:relative;
+}
+.menu-open #nav { 
+	display:block; 
+	position: absolute;
+	height: 100%;
+	top: 0;
+	left:100%;
+	visibility:hidden;
+	width:$navWidth; 
+}
+push {
+	position: relative;
+	left: 0;
+}
+.push-toleft {
+	left: -15em;
+}
+.nav-right {
+	right: 0;
+}
+.nav-right.nav-open { visibility:visible; }
+.nav, .push {
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+.nav-right {
+	right: -190px;
+	}
+.push-toright {
+	left: 190px;
+	}
+.menu-open #social-media, .menu-open #nav-close-btn{display:block;}
+.menu-open #profile, .menu-open #menu-main li{float:none;}

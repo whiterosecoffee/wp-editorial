@@ -1,0 +1,32 @@
+@import ""
+#eidBanner { background-color: white; height: 60px; color: #ff9100; position: relative; margin: 25px auto; border: 2px solid #ff9100;
+	@include bp(papaBear){
+		background-image: url("../images/eidBannerWhite.png"); background-position: right center; max-width: 94%; padding: 0 15px; 
+	}
+	@include bp(mamaBear){
+		max-width: 100%; background-image: url("../images/eidBannerWhite.png");background-position: 19% center;
+	}
+	@include bp(singleColumn){
+		background-image:none;  border-bottom: 2px solid #E58200;
+	}
+	@include bp(babyBear){font-size: 0.75em;}
+
+	
+	a { display: block;}
+	#eidButton {   font-size: 1.4em; font-weight: bold; margin-right: 25px; color: white;background-color: #ff9100;border-radius: 10px;
+		@include bp(papaBear){float: right; margin-top: 7px;  padding: 7px 20px;  }
+		@include bp(mamaBear){float: right;font-size: 1em; margin-top: 9px; padding: 10px 20px; }
+		@include bp(singleColumn){ display: none; }
+		
+	}
+	h1 { font-size: 1.4em; color: inherit; margin-right: 12%; float: right; max-width: 1200px; line-height: 60px; font-weight: bold;
+		@include bp(mamaBear){font-size: 1.2em; margin-right: 2%;}
+		@include bp(singleColumn){ font-size: 1.05em; }
+
+	}
+	.caretLeft { 
+		@include bp(singleColumn){height: 0; width: 0; border-right: 10px solid white; border-top: 7px solid transparent; border-bottom: 7px solid transparent; font-size: 0; line-height: 60px; margin-right: 8px;}
+
+		}
+	
+}

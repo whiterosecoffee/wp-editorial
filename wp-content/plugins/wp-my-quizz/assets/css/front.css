@@ -1,0 +1,295 @@
+/**
+  * Width 1200px;
+  */
+/*
+@media (min-width: 1200px) {
+.my_answers{
+	width:590px;
+	margin:auto;
+}
+.my_question_image{
+	width:600px;
+}
+.my_answer:nth-child(3n){
+	margin-right:0;
+}
+
+}
+
+@media (min-width: 768px) {
+.my_answers{
+	width:390px;
+	margin:auto;
+}
+.my_question_image{
+}
+.my_answer:nth-child(2n){
+	margin-right:0;
+}	
+}
+@media (min-width: 992px) {
+.my_answers{
+	width:390px;
+	margin:auto;
+}
+.my_question_image{
+}
+.my_answer:nth-child(2n){
+	margin-right:0;
+}
+	
+}*/
+.my_share_results{
+	display:none;
+}
+.activitybar-vertical{
+	/*display:none !important;*/
+}
+.my_question{
+	margin:auto !important;
+}
+.my_share_results{
+	width:98%;
+	margin:auto !important;
+	margin-top:30px;
+	border:2px solid #dddddd;
+	/*margin-bottom:20px;*/
+}
+.my_quizz_title{
+	margin-top:15px;
+	margin-left:10px;
+	color:#797979;
+	font-weight:bold;
+	font-size:16px;
+	line-height:16px;
+	
+}
+.my_result_div{
+	margin-left:10px;
+	margin-right:10px;
+	margin-top:20px;
+	position:relative;
+	min-height:200px;
+}
+#my_result h2{
+	margin:0 !important;
+	margin-top:15px !important;
+	margin-left:10px !important;
+	color:black;
+	font-size:32px;
+	line-height:32px;
+	
+}
+.my_image_result{
+	/*float:right;*/
+	width:180px;
+	/*margin-left:20px;*/
+	position:absolute;
+	top:0px;
+	right:0px;
+}
+
+.my_result_div p{
+	/*width:200px;*/
+	display:block;
+	/*float:left;*/
+	text-align:left;
+	margin:0 !important;
+	padding:0 !important;
+	/*width:180px;*/
+	color:#797979 !important;
+	/*font-weight:bold;*/
+	font-size:14px;
+	line-height:16px;
+	margin:0px !important;
+	margin-right:190px !important;
+	/*float:left;*/
+
+	
+}
+.my_share_results_div{
+	backgound-color:#f5fcfe;
+	border-top:2px solid #dddddd;
+	height:80px;
+	
+}
+.my_share_text{
+	font-size:14px;
+	/*margin-left:10px;*/
+	margin-right:10px;
+	line-height:14px;
+	color:black;
+	margin-top:10px;
+	float:right;
+	/*width:180px;*/
+}
+.my_share_icons{
+	margin-top:10px;
+	float:left;
+	margin-left:10px;
+	
+}
+.my_answers{
+/*	width:590px;*/
+	margin:auto;
+}
+
+@media (min-width: 320px) and (max-width: 480px){
+/*.my_answers{
+	width:200px;
+	margin:auto;
+}
+.my_question_image{
+	width:300px;
+	margin:auto;
+}
+.my_answer{
+	margin-right:0;
+}*/
+.my_result_div p{
+	margin:0 !important;
+	
+	
+}
+.my_image_result{
+	position:static;
+	width:180px;
+	margin:auto;
+	margin-top:5px;
+	margin-bottom:5px;
+}
+.my_share_text{
+	float:none;
+	/*text-align:center;*/
+	width:100%;
+}
+.my_share_icons{
+	text-align:center;	
+}
+}
+.my_question_image{
+	position:relative;
+	margin-bottom:10px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.my_question_image img{
+	max-width:100%;
+}
+.my_question_title{
+	position:absolute;
+	top:10px;
+	text-align:center;
+	width:100%;
+	font-size:30px;
+	font-weight:bold;
+	color:white !important;
+	background-color:black !important;
+	opacity:0.5;
+	
+}
+.my_question_title_1{
+	position:absolute;
+	top:10px;
+	text-align:center;
+	width:100%;
+	font-size:20px;
+	font-weight:bold;
+	color:black !important;
+	
+}
+.my_answer_image{
+	width:180px;
+	height:180px;
+	text-align:center;
+	position:relative;
+}
+.my_check{
+	
+}
+.my_image_result span{
+	font-size:12px;
+	color:#797979 !important;
+	display:block;
+	overflow:hidden;
+	
+}
+.my_answer{
+	width:194px;
+	/*padding:5px;*/
+	height:230px;
+	border:2px solid #ebebeb;
+	background-color:#f7f7f7;
+	float:left;
+	/*margin-right:10px;
+	border-spacing:12px;
+	*/
+	margin-top:10px;
+	/*border-collapse: separate;
+	border-spacing: 12px 0;*/
+	margin-right:10px;
+	margin-bottom:12px;
+	cursor:pointer;
+}
+.my_answer_image{
+	margin:5px;
+	/*padding:5px;*/
+	/*border:1px solid #ddd;*/
+}
+.my_answers::after{
+	content:" ";
+	display:table;
+	height:0;
+	width:0;
+	clear:both;
+}
+.my_title{
+	color:black;
+	font-weight:bold;
+	font-size:12px;
+	text-align:center;
+	float:left;
+	margin-left:5px;
+	line-height:12px;
+	padding-top:2px;
+	width:155px;
+}
+.my_answer:hover{
+	background-color:#fff195;
+	
+}
+.my_blue{
+	background-color:#bed5ed;
+}
+.my_check_span{
+	display:block;
+	background:url('images/my-check-box.png') no-repeat center center;
+	width:15px;
+	height:15px;
+	
+	margin-left:5px;
+}
+.my_check{
+	position:relative;
+	float:left;}
+.my_check_ok{
+	position:absolute;
+	bottom:2px;
+	left:6px;
+	background-image:url('../images/my-check-ok.png');
+	width:22px;
+	height:25px;
+}	
+.my_clear{
+	clear:both;
+}
+/**
+ * New added width 100%
+ * height:100%
+ */
+.my_question_image img{
+	/*width:100%;
+	/*height:100%;*/
+	/*max-height:200px;*/
+	
+}

@@ -1,0 +1,17 @@
+/* Scss Document */
+@include bp(mamaBear){
+	.gutter {display: none;}
+	$gutter: 2.43%; /*Gutter Allowance = number of gutters * gutter width / number of columns. */
+	$gutterAllowance: 1 * $gutter / 2;
+	.kasraNewest {  }
+	.kasraMostViewed {  }
+	.kasraMostShared {  }
+
+}
+@include bp(papaBear){
+	$gutter: 1.66%;
+	$gutterAllowance: 2 * $gutter / 3;
+	.kasraNewest { width: 25% - $gutterAllowance; }
+	.kasraMostViewed { width: 25% - $gutterAllowance; }
+	.kasraMostShared { width: 50% - $gutterAllowance; }
+}

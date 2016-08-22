@@ -1,0 +1,212 @@
+/* 
+Related article section
+----------------------------------------------------*/
+ .ra_Wrap {
+    overflow:hidden;
+    margin-top:30px;
+    margin-bottom:10px;
+}
+.ra_Wrap h2 {
+    font-size:24px;
+    color:#4c4c4c;
+    text-align:right;
+    margin-bottom:20px;
+    font-family:'Droid Arabic Kufi', serif;
+    font-weight:normal;
+}
+.ra_box {
+    width:100%;
+    float:none;
+    margin:0 auto;
+    padding-top: 30px;
+}
+.ra_box.first-item {
+    padding-top: 0;
+}
+.ra_thumb {
+    height:auto;
+}
+.ra_thumb img {
+    width: 100%;
+}
+.ra_description {
+    height:auto;
+    position: relative;
+    padding:10px;
+    background-color:#f6f6f6;
+    border:1px solid #dddddd;
+    border-top:none;
+    text-align:right;
+    font-family:'Droid Arabic Kufi', serif;
+}
+.ra_description p {
+    color:#4d4d4d;
+    font-size:18px;
+    font-family:inherit;
+    line-height:22 px;
+    margin-top: 0;
+    font-family:'Droid Arabic Kufi' !important;
+}
+.nomargin {
+    margin:0 !important;
+}
+
+@media (min-width: 48em){
+  .ra_Wrap {
+        overflow:hidden;
+        margin-top:30px;
+        margin-bottom:0px;
+        width: 700px !important;
+    }
+    .ra_Wrap h2 {
+        font-size:24px;
+        color:#4c4c4c;
+        text-align:right;
+        margin-bottom:20px;
+        font-family:'Droid Arabic Kufi', serif;
+        font-weight:normal;
+    }
+    .ra_box {
+        width:400px;
+        float:right;
+        margin:0;
+        padding-top: 30px;
+    }
+    .ra_thumb img {
+        width: 100%;
+    }
+    .ra_description {
+        height:auto;
+        min-height: 90px;
+        position: relative;
+        padding:10px;
+        background-color:#f6f6f6;
+        border:1px solid #dddddd;
+        border-top:none;
+        text-align:right;
+        font-family:'Droid Arabic Kufi', serif;
+    }
+    .ra_description p {
+        color:#4d4d4d;
+        font-size:14px;
+        font-family:inherit;
+        line-height:18px;
+        margin-top: 0;
+        font-family:'Droid Arabic Kufi', serif;
+    }
+}
+
+@media (min-width: 64em){
+  .ra_Wrap {
+        overflow:hidden;
+        margin-top:30px;
+        margin-bottom:0px;
+    }
+    .ra_Wrap h2 {
+        font-size:24px;
+        color:#4c4c4c;
+        text-align:right;
+        margin-bottom:20px;
+        font-family:'Droid Arabic Kufi', serif;
+        font-weight:normal;
+    }
+    .ra_box {
+        width:160px !important;
+        float:right;
+        margin:0 11px 0 0;
+        padding-top: 0;
+    }
+    .b-sidebar .ra_box {
+        width:165px !important;
+    }
+    .ra_box.first-item {
+        margin-right: 0;
+    }
+    .ra_box.last-item {
+        margin-top: 0;
+        margin-right: 11px;
+    }
+    .ra_thumb {
+        height:auto;
+    }
+    .ra_thumb img {
+        width: 100%;
+    }
+    .ra_description {
+        height:90px !important;
+        position: relative;
+        padding:10px;
+        background-color:#f6f6f6;
+        border:1px solid #dddddd;
+        border-top:none;
+        text-align:right;
+        font-family:'Droid Arabic Kufi', serif;
+    }
+    .ra_description p {
+        color:#4d4d4d;
+        font-size:14px;
+        font-family:inherit;
+        line-height:18px;
+        margin-top: 0;
+        font-family:'Droid Arabic Kufi', serif;
+    }
+}
+
+@media (min-width: 74.5em){
+      .ra_Wrap {
+        overflow:hidden;
+        margin-top:30px;
+        margin-bottom:0;
+        width: auto !important;
+    }
+    .ra_Wrap h2 {
+        font-size:24px;
+        color:#4c4c4c;
+        text-align:right;
+        margin-bottom:20px;
+        font-family:'Droid Arabic Kufi', serif;
+        font-weight:normal;
+    }
+    .ra_box {
+        width:226px !important;
+        float:right;
+        margin:0 11px 0 0;
+        padding-top: 0;
+    }
+    .b-sidebar .ra_box {
+        width:210px !important;
+    }
+    .ra_thumb {
+        height:auto;
+    }
+    .ra_box.first-item {
+        margin-right: 0;
+    }
+    .ra_box.last-item {
+        margin-top:0;
+        margin-right: 11px;
+    }
+    .ra_thumb img {
+        width: 100%;
+    }
+    .ra_description {
+        /*height:60px;*/
+        position: relative;
+        padding:10px;
+        background-color:#f6f6f6;
+        border:1px solid #dddddd;
+        border-top:none;
+        text-align:right;
+        font-family:'Droid Arabic Kufi', serif;
+    }
+    .ra_description p {
+        color:#4d4d4d;
+        font-size:14px;
+        font-family:inherit;
+        line-height:18px;
+        margin-top: 0;
+        font-family:'Droid Arabic Kufi', serif;
+    }
+}
+
+/*-----------------*/

@@ -1,0 +1,82 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Kasra Eid Greetings 1.0\n"
+"POT-Creation-Date: 2014-4-3 05:25:07+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: Ahmed <ahmed@venturedive.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: \n"
+"Language: ar\n"
+"X-Generator: Poedit 1.6.4\n"
+
+msgid "Select an Eid Card you want to use"
+msgstr "اختر التهنئة التي تريد ارفاقها في البطاقة"
+
+msgid "Choose your photo"
+msgstr "إختر صورتك"
+
+msgid "upload a photo"
+msgstr "ارفق صورة من كمبيوترك"
+
+msgid "take a photo"
+msgstr "صور نفسك عن طريق الكمبيوتر"
+
+msgid "use this photo"
+msgstr "استعمل هذه الصورة"
+
+msgid "Re-take photo"
+msgstr "صور مرة أخرى"
+
+msgid "Back"
+msgstr "السابق"
+
+msgid "Next"
+msgstr "التالي"
+
+msgid "Preview your card"
+msgstr "اعرض البطاقة"
+
+msgid "Scale"
+msgstr "اختار الحجم"
+
+msgid "Rotate"
+msgstr "تدوير"
+
+msgid "Share your card"
+msgstr "شارك بطاقة التهنئة"
+
+msgid "Share"
+msgstr "شاركها"
+
+msgid "Step 1"
+msgstr "الخطوة 1"
+
+msgid "Step 2"
+msgstr "الخطوة 2"
+
+msgid "Step 3"
+msgstr "الخطوة 3"
+
+msgid ""
+"We’re sorry for the trouble, but you can only create your eid greeting on "
+"your laptop."
+msgstr "يمكنك فقط إنشاء التهنئة الخاصة على جهاز الكمبيوتر. نأسف لذلك :("
+
+msgid ""
+"Let Kasra help you create and personalize your own Eid greeting to share "
+"with your loved ones!"
+msgstr ""
+"كسرة ستساعدك هذا العيد في صنع بطاقة تهنئة مميزة وخاصة بك بمناسبة عيد الأضحى "
+"والتي يمكنك مشاركتها مع عائلتك وأصحابك"
+
+msgid "Get started!"
+msgstr "ابدأ"
+
+msgid "Create your own eid card"
+msgstr "ابتكر بطاقة تهنئة خاصة بك للعيد"
+
+msgid ""
+"Please make sure you have pressed the button at the top to allow the browser"
+msgstr "الرجاء التأكد من ضغط زر السماح في اعلى نافذة المتصفح"

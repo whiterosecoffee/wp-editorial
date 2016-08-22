@@ -1,0 +1,386 @@
+/* Scss Document */
+@import "header";
+
+
+
+.kasraNewest,
+.kasraMostViewed,
+.kasraMostShared,
+.newestArticles .featuredImage,
+.newestArticles .tileTitle {float: right; }
+.col-title {
+	position: relative;
+	margin-bottom: 10px;
+	border-top: 5px solid $orange;
+
+	@include bp(papaBear){
+		margin-top:25px;
+
+	}
+
+	@include bp(babyBear){
+		font-size: 1.25em;
+	}
+}
+
+.tabNav {
+	@include bp(papaBear){margin-bottom: 15px;}
+	@include bp(tabsWidth){background-color: white; padding-top: 10px; }
+}
+.desktop .tabTitle { /* added for when Desktop users have small viewports and are in tabs */
+	cursor: pointer;
+	@include bp(papaBear){
+		cursor: default;
+	}
+}
+.col-title h1 {
+
+	border-left: 2px solid $lightGrey;
+	border-right: 2px solid $lightGrey;
+	margin-bottom: 0;
+	color: $orange;
+	border-bottom: 2px solid $lightGrey;
+
+
+	@include bp(papaBear){
+		font-size: 1.75em;padding: 7px 8px 10px 0;
+		background-color: white;
+	}
+	@include bp(mamaBear){padding: 7px 8px 10px 0;
+		font-size:1.25em;
+		background-color: white;
+	}
+	@include bp(tabsWidth){ border-left: none; border-right: none; padding: 7px 0px 10px 0; text-align: center; color: $lightGrey;}
+	@include bp(babyBear){
+		font-size: .7em;
+	}
+
+}
+
+.active h1 {
+	@include bp(tabsWidth){
+		color: $orange;
+		border-left: 0;
+		border-right: 0;
+		border-bottom: 2px solid $orange;
+	}
+	@include bp(papaBear){
+		border-top: none;
+		border-bottom: 2px solid $lightGrey;
+		border-left: 2px solid $lightGrey;
+		border-right: 2px solid $lightGrey;
+	}
+}
+.col-emblem {
+		background-color: $orange;
+		height:46px;
+		float: right;
+		padding: 0 7px;
+		text-align: left;
+		margin-left: 9px;
+		@include bp (babyBear){
+			display: none;
+		}
+
+}
+.triangle-bottom {
+		border-top: 10px solid $orange;
+		border-left: 31px solid transparent;
+		border-right: 30px solid transparent;
+		height: 0;
+		width: 0;
+		float: right;
+		clear: right;
+}
+.col-emblem .icon-kasra-emblem {
+	color: white;
+	font-size: 2em;
+	margin-right: 8px;
+	margin-left: 1px;
+	line-height: 42px;
+
+}
+#tabs {
+	@include bp(papaBear){
+		padding-top: 0;
+	}
+}
+.tabContent {
+	// background-color: white;
+	// padding-top: 20px;
+	// border-top: 2px solid $lightGrey;
+	@include bp(papaBear){
+		padding-top: 0;
+		background-color: transparent;
+		border-top: 0;
+	}
+}
+// .tabContent section {
+// 	display: none;
+// 	@include bp(papaBear){
+// 		display: block;
+// 	}
+// }
+// .tabContent section.content-current {
+// 	display: inline-block;
+// }
+.articleExcerpt {
+	border:2px solid $lightGrey;
+	background-color:white;
+}
+.kasraMostShared .articleExcerpt {
+	@include bp(papaBear){
+		border-bottom-right-radius: 45px;
+		margin-bottom: 20px;
+	}
+}
+.mostShared,
+.mostShared .featuredImage {
+	@include bp(singleColumn){
+		border-top-right-radius: 0;
+	}
+}
+#most-viewed .articleExcerpt,
+#most-shared .articleExcerpt {
+		margin-bottom: 10px;
+	}
+#newest .articleExcerpt { @include bp(tabsWidth){ margin-bottom: 10px;}}
+
+.kasraMostViewed .articleExcerpt > .articleLink {
+		@include bp(papaBear){
+			max-height: 168px;
+		}
+		@include bp(mamaBear){
+			max-height: 175px;
+		}
+		@include bp(tabsWidth){
+			max-height: 100%;
+		}
+	}
+.kasraMostShared .articleExcerpt > .articleLink {
+		@include bp(papaBear){
+			max-height: 286px;
+		}
+		@include bp(mamaBear){
+			max-height: 271px;
+		}
+		@include bp(tabsWidth){
+			max-height: 100%;
+		}
+	}
+.articleExcerpt .articleLink .featuredImage { width: 100%; }
+.articleExcerpt > .articleLink {
+	overflow: hidden;
+	@include bp(singleColumn){ max-height: 320px;}
+	@include bp(babyBear){  }
+}
+.newestArticles {margin-bottom: 2px;}
+.tileTitle {
+	@include bp(babyBear){
+		font-size: 1em;
+	}
+	@include bp(mamaBear){
+		font-size: 1.1em;
+	}
+}
+.kasraMostViewed .tileTitle {
+	@include bp(papaBear){
+		font-size: 1.1em;
+	}
+}
+#newest {
+	@include bp(papaBear){
+		.tileAuthor, .readTime, .countBox { display: none; }
+	}
+
+}
+#newest .articleLink {
+	@include bp(papaBear){
+		position: relative;
+		height: 93px;
+	}
+}
+	.newestArticles .articleLink .featuredImage {
+		@include bp(papaBear){
+
+		}
+		@include bp(newPicDrop){
+			// display: none;
+		}
+
+	}
+	#newest .tileTitle {
+		display: block;
+
+		transition: all 0.5s ease 0s;
+		-moz-transition: all 0.5s ease 0s;
+		-webkit-transition: all 0.5s ease 0s;
+		-o-transition: all 0.5s ease 0s;
+		-ms-transition: all 0.5s ease 0s;
+		@include bp(papaBear){
+			position: absolute;color: white;
+			top: 0; left: 0;
+			background: -moz-linear-gradient(top,  rgba(0,0,0,0.62) 0%, rgba(0,0,0,0.22) 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.1)), color-stop(100%,rgba(0,0,0,0.62))); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top,  rgba(0,0,0,0.62) 0%,rgba(0,0,0,0.22) 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top,  rgba(0,0,0,0.62) 0%,rgba(0,0,0,0.22) 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top,  rgba(0,0,0,0.62) 0%,rgba(0,0,0,0.22) 100%); /* IE10+ */
+			background: linear-gradient(to bottom,  rgba(0,0,0,0.62) 0%,rgba(0,0,0,0.22) 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9e000000', endColorstr='#38000000',GradientType=0 ); /* IE6-9 */
+			height: 100%; width: 100%;
+			font-size: 0.9em;
+			line-height: 1.1em;
+			margin-top: 0;
+			padding: 10px;
+		}
+		@include bp(newPicDrop){
+			padding: 10px 10px 10px 5px;
+		}
+	}
+	#newest .tileTitle:hover { @include bp(papaBear){ color: white;background: rgba(0,0,0,.1);} @include bp(tabsWidth){color: $orange;}}
+
+
+
+
+
+	.articleLink { display: block; }
+.articleExcerpt { position: relative;}
+	.articleAuthorImgLink {  }
+.kasraMostShared .articleAuthorImgLink img {
+	height: 45px;
+	width: 45px;
+}
+
+.kasraMostViewed .articleAuthorImgLink img { @include bp(papaBear){	height: 40px; width: 40px; }}
+	.articleAuthorLink {
+		vertical-align: bottom;
+	}
+	#most-shared .articleAuthorLink, #most-shared .readTime { @include bp(papaBear){ font-size:.8em; }}
+	#most-viewed .articleAuthorLink, #most-viewed .readTime { @include bp(papaBear){ font-size:.7em; }}
+	.articleAuthorLink, .readTime { @include bp(tabsWidth){font-size: .7em;}}
+	.articleStats {
+		position:absolute;
+		top:0;
+		left:0;
+		width:100%;
+	}
+	.articleExcerpt:hover .socialCount {display:block;}
+	.viewCount {
+		background-color:rgba(255,255,255,.74);
+	}
+	.socialCount {
+		display:none;
+		color:white;
+	}
+		.socialCount i {
+			background-color:white;
+			border-radius:50%;
+			display:block;
+			height:1.3em;
+			width:1.3em;
+			line-height: 1.3em;
+		}
+	.fbCount { color:#306199; }
+	.twCount { color:#26c4f1; }
+	.countBox {
+		display:block;
+		position: absolute;
+		top: 6%;
+		left: -2px;
+		background-color: white;
+		text-align: center;
+		border-top-style: solid;
+		border-top-width: 1px;
+    	border-top-color: rgba(0,0,0, 0.05);
+    	border-bottom-style: solid;
+		border-bottom-width: 1px;
+    	border-bottom-color: rgba(0,0,0, 0.05);
+    	border-right-style: solid;
+		border-right-width: 1px;
+    	border-right-color: rgba(0,0,0, 0.05);
+
+		@include bp(papaBear){
+		}
+		@include bp(mamaBear){
+		}
+	}
+	#most-shared .countBox, #taxContent .countBox {
+		padding:6px 5px;
+		font-size: .8em;
+		@include bp(tabsWidth){ padding:5px 4px; font-size: .7em; }
+	}
+	#most-viewed .countBox, #newest .countBox {
+		padding:5px 4px;
+		font-size: .7em;
+	}
+	.countBox .icon-facebook-2 {
+		display: inline-block;
+		height: 25px;
+		width: 25px;
+		border-radius: 50%;
+		background-color: $fbBlue;
+		color: white;
+		font-size: 1.2em;
+		line-height: 25px;
+		margin-top: 5px;
+
+	}
+	.mostViewed .countBox .icon-facebook-2 { height: 20px; width: 20px; line-height: 20px; font-size: 1.1em;}
+	.countBox span {
+		display: block;
+	}
+	.mostShared .countBox {
+		@include bp(papaBear){
+		}
+	}
+	.mostShared i {
+		@include bp(papaBear){
+			font-size:1.1em;
+		}
+	}
+.tileFooter { padding:10px 0 5% 2%;}
+#newest .tileFooter { @include bp(papaBear){ padding-bottom: 0; padding-top: 0; }}
+	.tileAuthor {
+		margin-top: -33px;
+	}
+	.articleExcerpt .tileTitle { padding-right: 4%; }
+	.tileTitle:hover { color: $orange; }
+	.newestArticles .articleStats {
+		@include bp(papaBear){
+			display: none;
+		}
+	}
+	.newestArticles .tileAuthor {
+		@include bp(papaBear){
+			display: none;
+		}
+	}
+	.newestArticles .readTime {
+		@include bp(papaBear){
+			display: none;
+		}
+	}
+	.newestArticles .tileTitle:hover {
+		@include bp(papaBear){
+		}
+	}
+	.readTime {
+		position: absolute;
+		bottom: 3px;
+		left: 5px;
+	}
+//Nathan
+@media screen and (min-width: 62rem) {
+            .menu-all-container{display:block!important;}
+        }
+        #main-all-menus-wrapper{width:100%; background-color:#e8ebeb; border-bottom-right-radius: 45px;}
+        .scroll-menu #main-all-menus-wrapper, .menu-open #main-all-menus-wrapper { background-color: transparent; border-bottom-right-radius: 0;}
+            .mobile-nav-closed #main-all-menus-container{float:right;}
+            .menu-open .menu-all-container { float: none; border-bottom: 1px solid #888; }
+                .mobile-nav-closed .menu-main-container{float:left;}
+                .mobile-nav-closed .menu-all-container{display:none; float:right; margin-left: 11px;}
+            .scroll-menu .menu-open #menu-main{height:auto;}
+            #menu-all > .sub-menu > li:first
+            .menu-open ul#menu-all >li >a{display: none;}
+            .menu-open ul#menu-all ul.sub-menu ul{display: none;}
+.home  .articleExcerpt.seasonal{display:none;}
